@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: First Maya Project (Office).ma
-//Last modified: Fri, Sep 05, 2025 02:22:26 PM
+//Last modified: Fri, Sep 05, 2025 02:26:07 PM
 //Codeset: 1252
 requires maya "2026";
 requires "mtoa" "5.5.3";
@@ -10,7 +10,7 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26100)";
-fileInfo "UUID" "C5D7B5E6-46D8-15AC-AC61-5DBDACF1B9B1";
+fileInfo "UUID" "3B0BF5A6-4862-8D97-54DF-D5BA261BC050";
 createNode transform -s -n "persp";
 	rename -uid "8DFFA5D5-44D9-5F28-C342-D4B3FC53A05A";
 	setAttr ".v" no;
@@ -2574,6 +2574,19 @@ createNode mesh -n "Chair_Support2Shape" -p "Chair_Support2";
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+createNode transform -n "pSphere1";
+	rename -uid "8D9BE62B-4641-6019-E376-07841AC3A4D8";
+	setAttr ".t" -type "double3" -8.0872839036565889 3.7629035409921778 0 ;
+createNode mesh -n "pSphereShape1" -p "pSphere1";
+	rename -uid "2EADA1CB-4402-CFDC-11C9-909A4A9BC8F3";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "4465E8C2-4E46-2A20-A3EB-6899FDE5BA39";
 	setAttr -s 2 ".lnk";
@@ -3278,6 +3291,8 @@ createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "0087F276-4191-4AA1-DB22-76A49278B220";
 	setAttr ".b" -type "string" "playbackOptions -min 1 -max 120 -ast 1 -aet 200 ";
 	setAttr ".st" 6;
+createNode polySphere -n "polySphere1";
+	rename -uid "BC11C5C7-41F6-5E42-4497-6C835C4C2160";
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -3303,7 +3318,7 @@ select -ne :openPBR_shader1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
-	setAttr -s 12 ".dsm";
+	setAttr -s 13 ".dsm";
 	setAttr ".ro" yes;
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
@@ -3337,6 +3352,7 @@ connectAttr "polyExtrudeFace35.out" "pCubeShape3.i";
 connectAttr "polyExtrudeFace39.out" "pCubeShape4.i";
 connectAttr "polyExtrudeFace43.out" "pCubeShape5.i";
 connectAttr "polyExtrudeFace49.out" "pCubeShape6.i";
+connectAttr "polySphere1.out" "pSphereShape1.i";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
@@ -3466,4 +3482,5 @@ connectAttr "Chair1Shape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "Chair2Shape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "Chair_Support1Shape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "Chair_Support2Shape.iog" ":initialShadingGroup.dsm" -na;
+connectAttr "pSphereShape1.iog" ":initialShadingGroup.dsm" -na;
 // End of First Maya Project (Office).ma

@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: First Maya Project (Office).ma
-//Last modified: Tue, Sep 09, 2025 05:18:12 PM
+//Last modified: Tue, Sep 09, 2025 08:21:09 PM
 //Codeset: 1252
 requires maya "2026";
 requires "mtoa" "5.5.3";
@@ -10,23 +10,23 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26100)";
-fileInfo "UUID" "F1EA806E-4C90-9CD2-27E2-14B82B8482E0";
+fileInfo "UUID" "AF686CB4-4597-EA0D-B388-27A5B2FD9EFA";
 createNode transform -s -n "persp";
 	rename -uid "8DFFA5D5-44D9-5F28-C342-D4B3FC53A05A";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -36.796466196287021 22.691454474743104 18.303302730091595 ;
-	setAttr ".r" -type "double3" -15.938352728207274 1736.5999999997575 -5.3274541509177271e-15 ;
+	setAttr ".t" -type "double3" -50.708379979001855 31.961973808520785 20.23359380318017 ;
+	setAttr ".r" -type "double3" -20.738352728242074 1733.3999999994685 8.0084894230410251e-15 ;
 	setAttr ".rp" -type "double3" 7.1054273576010019e-15 7.1054273576010019e-15 -1.0658141036401504e-14 ;
 	setAttr ".rpt" -type "double3" -1.6568915030184916e-14 5.6688990440911956e-16 1.6292601175722333e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "19F37AF3-4617-CEEC-9202-3697F8E078EB";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 52.668722289885118;
+	setAttr ".coi" 66.832066792523861;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 8.4870953173792483 8.228469067419109 -4.3730156967200537 ;
+	setAttr ".tp" -type "double3" 6.6529643915496113 8.2966765787495032 -4.5888764765875703 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "BA88DC4E-4156-4956-2F5D-5BBE28557ABE";
@@ -3335,8 +3335,8 @@ createNode mesh -n "pCubeShape14" -p "pCube14";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "pCube15";
 	rename -uid "59C46520-41E6-9E1A-C269-CCB0FF587EAF";
-	setAttr ".t" -type "double3" 6.8872671093312272 8.4041860587223489 -4.5546239425055344 ;
-	setAttr ".r" -type "double3" -204.41912918586738 81.682889264784365 1.0993837496017503e-14 ;
+	setAttr ".t" -type "double3" 8.9588743223305958 8.1667598302626097 -4.9140999777715928 ;
+	setAttr ".r" -type "double3" -1.8724208888443268 81.682889264784919 0 ;
 	setAttr ".s" -type "double3" 0.65811534844365938 2.4687687725623837 1 ;
 createNode mesh -n "pCubeShape15" -p "pCube15";
 	rename -uid "EAE81B37-4720-4B90-4E61-7CBB2A9E156C";

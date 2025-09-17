@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: First Maya Project (Office).ma
-//Last modified: Tue, Sep 16, 2025 08:23:57 PM
+//Last modified: Tue, Sep 16, 2025 08:25:31 PM
 //Codeset: 1252
 requires maya "2026";
 requires "mtoa" "5.5.3";
@@ -10,12 +10,12 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26100)";
-fileInfo "UUID" "F249555B-4ED6-0BAD-9756-DBB0B2B4C25D";
+fileInfo "UUID" "90E4A508-42AC-E5D9-A3B3-679F9A15F96F";
 createNode transform -s -n "persp";
 	rename -uid "8DFFA5D5-44D9-5F28-C342-D4B3FC53A05A";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -48.033788155523268 26.176653287828458 21.371364886373804 ;
-	setAttr ".r" -type "double3" -20.738352727133009 1733.7999999998326 -3.9407653988701536e-15 ;
+	setAttr ".t" -type "double3" -42.637117504463305 29.471962156639172 28.422737201151136 ;
+	setAttr ".r" -type "double3" -24.338352727136254 1743.3999999998027 2.8888882479240224e-15 ;
 	setAttr ".rp" -type "double3" 7.1054273576010019e-15 7.1054273576010019e-15 -1.0658141036401504e-14 ;
 	setAttr ".rpt" -type "double3" -1.6568915030184916e-14 5.6688990440911956e-16 1.6292601175722333e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
@@ -2442,6 +2442,7 @@ createNode mesh -n "BookShape4" -p "Book4";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Tall_Lamp";
 	rename -uid "756355F0-451B-8DAF-09D7-828F63CB3C7B";
+	setAttr ".t" -type "double3" 0.0093857880725067844 0 -9.7499749683266135 ;
 	setAttr ".rp" -type "double3" 8.4253699779510498 5.8500356674194336 9.0636681455973935 ;
 	setAttr ".sp" -type "double3" 8.4253699779510498 5.8500356674194336 9.0636681455973935 ;
 createNode mesh -n "Tall_LampShape" -p "Tall_Lamp";

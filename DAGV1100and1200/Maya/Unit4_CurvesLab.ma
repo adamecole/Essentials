@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Unit4_CurvesLab.ma
-//Last modified: Sun, Sep 28, 2025 05:56:51 PM
+//Last modified: Sun, Sep 28, 2025 05:58:31 PM
 //Codeset: 1252
 requires maya "2026";
 requires -nodeType "sweepMeshCreator" -dataType "sweepMeshData" -dataType "sweepProfileData"
@@ -14,11 +14,11 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26100)";
-fileInfo "UUID" "4318DCA0-4C7D-4672-9BF6-4A91A5CA17EC";
+fileInfo "UUID" "62F03998-45A2-331F-0301-A68FFCD4A063";
 createNode transform -s -n "persp";
 	rename -uid "8DFFA5D5-44D9-5F28-C342-D4B3FC53A05A";
-	setAttr ".t" -type "double3" -31.278168666260527 16.654214943020026 11.849869333669046 ;
-	setAttr ".r" -type "double3" -11.138352679872051 292.19999999989426 -4.2088556773596742e-15 ;
+	setAttr ".t" -type "double3" -32.483048821605344 18.00118265644133 7.5176695598793799 ;
+	setAttr ".r" -type "double3" -12.938352679875486 286.19999999987385 -2.8500502459031801e-15 ;
 	setAttr ".rp" -type "double3" 8.8817841970012523e-16 0 1.7763568394002505e-15 ;
 	setAttr ".rpt" -type "double3" -2.3898020211910665e-14 1.5819678592932781e-14 1.2746228275229334e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
@@ -2446,7 +2446,7 @@ createNode mesh -n "BookShape4" -p "Book4";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Tall_Lamp";
 	rename -uid "756355F0-451B-8DAF-09D7-828F63CB3C7B";
-	setAttr ".t" -type "double3" -1.6215582939740081 0 -10.508184701500353 ;
+	setAttr ".t" -type "double3" 1.1749544048300233 0 0.028755251377937441 ;
 	setAttr ".rp" -type "double3" 8.4253699779510498 5.8500356674194336 9.0636681455973935 ;
 	setAttr ".sp" -type "double3" 8.4253699779510498 5.8500356674194336 9.0636681455973935 ;
 createNode mesh -n "Tall_LampShape" -p "Tall_Lamp";

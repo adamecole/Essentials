@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Unit5_LabScene.ma
-//Last modified: Mon, Sep 29, 2025 07:55:19 PM
+//Last modified: Mon, Sep 29, 2025 07:56:53 PM
 //Codeset: 1252
 requires maya "2026";
 requires "mtoa" "5.5.3";
@@ -10,12 +10,12 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26100)";
-fileInfo "UUID" "37E7EACA-4CAD-1927-2880-90B1E29475DA";
+fileInfo "UUID" "7E3E1FC2-45B5-26D4-5E13-DBA6D9F4A093";
 createNode transform -s -n "persp";
 	rename -uid "6EB83A1F-4145-010E-C47D-40B722E8113C";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 15.634477907224172 13.492277768660347 -20.562651424952591 ;
-	setAttr ".r" -type "double3" -23.138352730000282 130.59999999984888 0 ;
+	setAttr ".t" -type "double3" 13.979099907635522 10.68475705265042 8.6202745445304423 ;
+	setAttr ".r" -type "double3" -15.338352729998844 40.199999999847648 1.0410353557159474e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "825FC2F5-4FD3-57B9-50C2-89B5920E2FAF";
 	setAttr -k off ".v" no;
@@ -9561,7 +9561,8 @@ createNode mesh -n "Large_SofaShape" -p "Large_Sofa";
 	setAttr ".cdvm[0]"  0 1 1;
 createNode transform -n "pCylinder7";
 	rename -uid "3D8271FC-466E-4955-5FC2-85B15676F1A6";
-	setAttr ".t" -type "double3" 0.79315614988687166 5.7964665616259587 -7.601576683319025 ;
+	setAttr ".t" -type "double3" 0.3099476636098798 5.3455461510522992 -6.0281999425785013 ;
+	setAttr ".r" -type "double3" 88.863288670335038 -38.288614479663543 0.70438950066240413 ;
 	setAttr ".s" -type "double3" 0.33168947214126282 0.76213042627785921 0.33168947214126282 ;
 createNode mesh -n "pCylinderShape7" -p "pCylinder7";
 	rename -uid "D0FB1FF1-4AF4-F2E1-72A4-EAA96EC94EC9";

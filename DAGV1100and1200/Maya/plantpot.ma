@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: plantpot.ma
-//Last modified: Tue, Oct 07, 2025 09:08:44 PM
+//Last modified: Tue, Oct 07, 2025 09:09:44 PM
 //Codeset: 1252
 requires maya "2026";
 requires "stereoCamera" "10.0";
@@ -10,7 +10,7 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26100)";
-fileInfo "UUID" "A304C06E-41F7-FF18-03BD-24A3514BB107";
+fileInfo "UUID" "4C0CA82E-45DC-6D07-2947-2AB79F81ECAA";
 createNode transform -s -n "persp";
 	rename -uid "57712612-44FB-C270-E135-04B2D155E44B";
 	setAttr ".v" no;
@@ -119,6 +119,7 @@ createNode nurbsCurve -n "curveShape1" -p "curve1";
 		;
 createNode transform -n "pPlane23";
 	rename -uid "190290C8-4EF3-DF5F-4EF9-BCA1A4050F66";
+	setAttr ".t" -type "double3" 0 0.97751673820899487 0 ;
 	setAttr ".rp" -type "double3" -1.2431769920067355 4.3192727723890814 -0.019526856095625988 ;
 	setAttr ".sp" -type "double3" -1.2431769920067355 4.3192727723890814 -0.019526856095625988 ;
 createNode mesh -n "pPlane23Shape" -p "pPlane23";

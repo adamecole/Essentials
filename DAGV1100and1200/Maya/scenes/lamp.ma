@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: lamp.ma
-//Last modified: Fri, Oct 10, 2025 07:58:15 PM
+//Last modified: Fri, Oct 10, 2025 08:18:08 PM
 //Codeset: 1252
 requires maya "2026";
 requires "stereoCamera" "10.0";
@@ -13,10 +13,10 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26100)";
-fileInfo "UUID" "09E624E5-4BB9-A670-4E05-5CA9BAC6B62E";
+fileInfo "UUID" "76ED0990-4A10-201B-5725-679354AC1624";
 createNode transform -n "Tall_Lamp";
 	rename -uid "756355F0-451B-8DAF-09D7-828F63CB3C7B";
-	setAttr ".t" -type "double3" 1.1749544048300233 0 0.028755251377937441 ;
+	setAttr ".t" -type "double3" -8.2074377808601238 0 -8.5043203706670525 ;
 	setAttr ".rp" -type "double3" 8.4253699779510498 5.8500356674194336 9.0636681455973935 ;
 	setAttr ".sp" -type "double3" 8.4253699779510498 5.8500356674194336 9.0636681455973935 ;
 createNode mesh -n "Tall_LampShape" -p "Tall_Lamp";
@@ -2423,20 +2423,20 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "E123E19B-4A73-D594-334E-1293A81B0182";
+	rename -uid "E563489D-4D98-952A-422B-7DA3231965D5";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "8AACDE6C-4B45-543A-5D55-82B65F664BB0";
+	rename -uid "5D86B0DC-47DA-3AD1-0667-4699E131F860";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "743592B1-4BF2-38D3-8332-799B6BAF5040";
+	rename -uid "3CEDE2C4-414E-CBC4-CBB1-8FB3DB4C6B31";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "553D68EB-4413-D7EF-17AF-BF923DFAA299";
+	rename -uid "6E2C844F-4AC9-7B0B-A064-738410134144";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "05160CD2-4CB5-533E-1FDB-C9A305ECB667";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "B1891A35-4DF5-4432-138C-339E0A356F24";
+	rename -uid "1DCADA32-4C19-BFA2-5522-A7BF82176F2B";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "72AF7B18-4DC3-0DD1-F6CA-17A5CC3EA3B6";
 	setAttr ".g" yes;

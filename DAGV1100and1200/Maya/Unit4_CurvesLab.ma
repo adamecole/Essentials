@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Unit4_CurvesLab.ma
-//Last modified: Fri, Oct 24, 2025 05:19:21 PM
+//Last modified: Fri, Oct 24, 2025 05:21:05 PM
 //Codeset: 1252
 requires maya "2026";
 requires "stereoCamera" "10.0";
@@ -13,10 +13,10 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26100)";
-fileInfo "UUID" "27816823-48CB-BFD0-F5E7-0B985DC0DF7F";
+fileInfo "UUID" "F9C07E7F-4414-7BBB-5FD1-F8911537354B";
 createNode transform -s -n "persp";
 	rename -uid "8DFFA5D5-44D9-5F28-C342-D4B3FC53A05A";
-	setAttr ".t" -type "double3" 1.9647318702649812 8.3268479982822559 7.2396451683344836 ;
+	setAttr ".t" -type "double3" 3.4235966137985221 15.200526319951248 13.179078472924507 ;
 	setAttr ".r" -type "double3" -48.338352681181838 733.79999999996039 -8.1877314683993189e-16 ;
 	setAttr ".rp" -type "double3" 8.8817841970012523e-16 0 1.7763568394002505e-15 ;
 	setAttr ".rpt" -type "double3" -2.3898020211910665e-14 1.5819678592932781e-14 1.2746228275229334e-14 ;
@@ -24,7 +24,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "19F37AF3-4617-CEEC-9202-3697F8E078EB";
 	setAttr -k off ".v";
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 4.7234723977165913;
+	setAttr ".coi" 13.924157589015151;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -8370,7 +8370,7 @@ createNode mesh -n "pCubeShape3" -p "pCube5";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.49999998509883881 0.875 ;
+	setAttr ".pv" -type "double2" 0.5208333432674408 0.32954548299312592 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
@@ -8392,7 +8392,7 @@ createNode mesh -n "pCylinderShape1" -p "pCylinder1";
 	setAttr ".cdvm[0]"  0 1 1;
 createNode transform -n "pCylinder2";
 	rename -uid "7367F4EB-4037-50E5-F03A-6A97032457BF";
-	setAttr ".t" -type "double3" 1.1479776634733789 6.0070417323528407 4.5473371275329129 ;
+	setAttr ".t" -type "double3" 3.5540627356038295 6.0070417323528407 4.5473371275329129 ;
 createNode mesh -n "pCylinderShape2" -p "pCylinder2";
 	rename -uid "E0AB76B3-4D46-6543-BA75-8B9E21C30D98";
 	setAttr -k off ".v";

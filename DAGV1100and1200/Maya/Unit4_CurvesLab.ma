@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Unit4_CurvesLab.ma
-//Last modified: Mon, Oct 27, 2025 11:29:41 PM
+//Last modified: Mon, Oct 27, 2025 11:30:59 PM
 //Codeset: 1252
 requires maya "2026";
 requires "stereoCamera" "10.0";
@@ -14,7 +14,7 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26100)";
-fileInfo "UUID" "1AC75CB0-4222-009B-5270-49B9E71400CE";
+fileInfo "UUID" "EAA3988B-4BB3-C1A7-E201-27A59218A5A4";
 createNode transform -s -n "persp";
 	rename -uid "8DFFA5D5-44D9-5F28-C342-D4B3FC53A05A";
 	setAttr ".t" -type "double3" -30.926567355497454 -0.61426563556078984 13.564823067879335 ;
@@ -4754,6 +4754,7 @@ createNode mesh -n "Wall_WindowShape" -p "Wall_Window";
 	setAttr ".dfgi" 108;
 createNode transform -n "pSphere11";
 	rename -uid "A5B20AAD-4925-847C-90E5-ED937E75AD63";
+	setAttr ".t" -type "double3" -6.0988694853587244 0 -16.181117271012898 ;
 	setAttr ".rp" -type "double3" -9.2054319609258872 1.7664256754836558 7.4250991020702566 ;
 	setAttr ".sp" -type "double3" -9.2054319609258872 1.7664256754836558 7.4250991020702566 ;
 createNode mesh -n "pSphereShape11" -p "pSphere11";

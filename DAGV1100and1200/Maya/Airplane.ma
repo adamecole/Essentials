@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Airplane.ma
-//Last modified: Fri, Dec 05, 2025 07:22:07 PM
+//Last modified: Fri, Dec 05, 2025 07:22:39 PM
 //Codeset: 1252
 requires maya "2026";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImage"
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26100)";
-fileInfo "UUID" "2EAE1F26-4277-F536-57EE-15AA172E5003";
+fileInfo "UUID" "A19CBC70-4239-60DA-CF86-9FA62F3522B2";
 createNode transform -s -n "persp";
 	rename -uid "9914A099-4642-022B-6E40-1DA6F77197F7";
 	setAttr ".v" no;
@@ -79,6 +79,7 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".o" yes;
 createNode transform -n "pCube1";
 	rename -uid "3DD14EEA-4F54-424D-53F2-7283E8A2525F";
+	setAttr ".t" -type "double3" 6.5221495022635967 0 0 ;
 	setAttr ".rp" -type "double3" 0 2.0494060630147706 0 ;
 	setAttr ".sp" -type "double3" 0 2.0494060630147706 0 ;
 createNode mesh -n "pCubeShape1" -p "pCube1";
